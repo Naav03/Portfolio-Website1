@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Portfolio Website|Amy Jones</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <!--boxicons link-->
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <!--google fonts link-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,800&display=swap"
+    rel="stylesheet">
+
+</head>
+
+  <style>
+  * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --bg-color: #1f1f21;
+  --text-color: #fff;
+  --main-color: #ffae00;
+
+  --big-font: 7rem;
+  --p-font: 1.1rem;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  overflow-x: hidden;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px 15%;
+  background: transparent;
+  transition: all ease .45s;
+}
+
+.logo {
+  color: var(--text-color);
+  font-size: 41px;
+  font-weight: 600;
+}
+
+.logo span {
+  color: var(--main-color);
+}
+
+.navbar {
+  display: flex;
+}
+
+.navbar a {
+  font-size: var(--p-font);
+  font-weight: 500;
+  color: var(--text-color);
+  margin: 0 25px;
+  transition: all ease .50s
+}
+
+.navbar a:hover {
+  color: var(--main-color);
+}
+
+.navbar a.active {
+  color: var(--main-color);
+}
+
+section{
+  padding: 0 15%;  
+}
+.home{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  
+}
+.home-img{
+  width: 730px;
+  height: 730px;
+}
+.home-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.home-text span{
+  padding: 5px 25px;
+  background: linear-gradient(130.08deg, #383528 0%, #191919 100%) box-shadow: 0px 20px 40px #00000070;
+  border: 1px solid #3b3b3b;
+  border-radius: 100px;
+  color: var(--text-color);
+  font-weight: 700;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.home-text h1{
+  font-size: var(--big font);
+  margin: 23px 0;
+  
+}
+.home-text p{
+  font-size: var(--p-font)
+  font-weight: 400;
+  color: #c3c3c3;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+.btn{
+  display: inline-block;
+  padding: 14px 34px;
+  background: var(--main-color);
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.6s ease-in-out;
+   
+}
+.btn:hover:{
+  transform: translateY(-5px);
+  background: transparent;
+  color: var(--main-color);
+}
+.two{
+  background: #141414;
+  border: 2px solid #141414;
+  color: var(--text-color);
+  margin-left: 25px;
+}
+.two:hover{
+  color: #141414;
+  background: var(--text-color);
+  border: 2px solid var(--text-color);
+}
+.share{
+  position: absolute;
+  bottom: 3rem;
+  left: 15%;
+  display: flex;
+  align-items: center;
+}
+.share p{
+  font-size: 17px;
+  color: var(--text-color);
+  margin-right: 25px;
+}
+.social i{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  width: 45px;
+  background: linear-gradient(130.08deg, #383528 0%, #191919 100%);
+  box-shadow: 0px 20px 40px #00000070;
+  border: 1px solid #3b3b3b;
+  border-radius: 50%;
+  color: var(--text-color);
+  font-size: 20px;
+  margin: 0 7px;
+  transition: all 0.6s ease-in-out; 
+}
+        
+    </style>
+<body>
+  <!--header section--->
+  <header>
+    <a href="#" class="logo"><span>A</span>my Jones</a>
+
+    <u1 class="navbar">
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Contacts</a></li>
+    </u1>
+    
+  </header>
+
+  <!--home section--->
+  <section class="home">
+    <div class="home-text">
+      <span>Software Developer</span>
+      <h1>Amy Jones</h1>
+      <p>I'm a designer, illustrator,and creator of courses,templates,wireframe kits,and the occasionally useful side-project</p>
+      <div class="main-btn">
+        <a href="#" class="btn">Download CV</a>
+        <a href="#" class="btn two">Hire Me Now</a>
+      </div>
+    </div>
+    <div class="home-img">
+      <img src="https://storygame.io/images/blockchain_consulting/girl-3.png" alt="Amy's Image">
+
+    </div>
+
+  </section>
+  <div class="share">
+    <p>Check out my:</p>
+    <div class="social">
+      <a href="#"><i class='bx bxl-facebook' ></i></a>
+       <a href="#"><i class='bx bxl-linkedin' ></i></a>
+       <a href="#"><i class='bx bxl-twitter' ></i></a>
+       <a href="#"><i class='bx bxl-skype' ></i></a>
+  <!--Custom js file link--->
+  <script src="js/script.js"></script>
+</body>
+</html>
